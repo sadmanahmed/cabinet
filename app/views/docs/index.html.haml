@@ -2,3 +2,7 @@
   %h2= link_to doc.title,doc
   %p= time_ago_in_words(doc.created_at)
   %p= truncate(doc.content, lenght:50) #truncate is a snippet of main content
+
+
+-# This routes are coming from rails routes
+= link_to "Create Doc", new_doc_path

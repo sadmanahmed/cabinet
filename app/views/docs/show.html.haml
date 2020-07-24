@@ -1,2 +1,12 @@
+-# this 2 will render title and doc
 %h1= @doc.title
 %p= @doc.content
+
+-# It will give all posts
+= link_to "All Docs",docs_path
+
+-# It will help tp edit
+= link_to "Fix Doc",edit_doc_path(@doc)
+
+-# Delete the post, and also a popup confirmation message before delete
+= link_to "Trash It", doc_path(@doc),method: :delete,data: { confirm: "Are you Sure?" }
