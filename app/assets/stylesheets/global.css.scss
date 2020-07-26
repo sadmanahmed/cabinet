@@ -111,7 +111,7 @@ footer {
   padding: 2rem 0;
   color: white;
   text-align: center;
-  @include bold_font;
+  @include "bold_font";
   p {
     margin: 0;
     font-size: .65rem;
