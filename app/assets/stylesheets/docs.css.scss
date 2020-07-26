@@ -1,4 +1,3 @@
-
 #docs {
   .doc {
     background: #78594B;
@@ -11,7 +10,7 @@
     position: relative;
     text-align: center;
     .title {
-      @include "bold_font";
+      @include bold_font;
       color: white;
       margin: 0;
       left: 4.5%;
@@ -39,11 +38,11 @@
   }
 }
 
-
+// DOCS SHOW
 
 #doc_show {
   .title {
-    @include "bold_font";
+    @include bold_font;
     color: #78594B;
     font-size: 2.0rem;
     margin-bottom: 1.25rem;
@@ -64,7 +63,7 @@
       text-decoration: none;
       color: #529ECC;
       border: 5px solid #529ECC;
-      @include "bold_font";
+      @include bold_font;
       background: transparent;
     }
   }
