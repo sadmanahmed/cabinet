@@ -1,0 +1,29 @@
+<div class="wrapper_with_padding">
+  <div class="clearfix" id="docs">
+    <% unless @docs.blank? %>
+      <% @docs.each do |doc| %>
+        <a href="<%= (url_for [doc]) %>">
+          <div class="doc">
+            <p class="title">
+              <%= doc.title %>
+            </p>
+            <p class="date">
+              <%= time_ago_in_words(doc.created_at) %>
+            </p>
+            <p class="content">
+              <%= truncate(doc.content, lenght:50) #truncate is a snippet of main content %>
+            </p>
+          </div>
+        </a>
+      <% end %>
+    <% else %>
+      <h2>Create Doc!</h2>
+      <p>Start Creating Documents and Organizing your life!</p>
+      <button>
+        <%= link_to "Create Doc", new_doc_path %>
+      </button>
+    <% end %>
+  </div>
+</div>
+<% # This routes are coming from rails routes %>
+<% # = link_to "Create Doc", new_doc_path %>

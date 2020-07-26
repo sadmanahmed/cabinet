@@ -17,6 +17,9 @@ gem 'simple_form', '~> 5.0', '>= 5.0.2'
 gem 'haml', '~> 5.1', '>= 5.1.2'
 gem 'devise', '~> 4.7', '>= 4.7.2'
 
+
+
+
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
 # Use SCSS for stylesheets
